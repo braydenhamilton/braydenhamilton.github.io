@@ -1,51 +1,109 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-}
-
-.App-header h1 {
+body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
-.App-header nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.App-header nav a:hover {
-  text-decoration: underline;
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-main {
-  padding: 20px;
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #00aaff;
 }
 
-section {
-  margin-bottom: 40px;
+.subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
 }
 
-.project-list, .experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.main-content {
+  display: grid;
+  gap: 2rem;
 }
 
-.project-item, .experience-item {
-  border: 1px solid #ddd;
-  padding: 20px;
+.section {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #00aaff;
+  margin-top: 0;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background-color: #333;
+  padding: 1.5rem;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.App-footer {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #f2f2f2;
-  color: #333;
+.card-title {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  color: #f0f0f0;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #aaa;
+  margin: 0 0 1rem 0;
+}
+
+.card-content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-link svg {
+  width: 32px;
+  height: 32px;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.social-link:hover svg {
+  color: #00aaff;
+}
+
+.cv-link {
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.cv-link:hover {
+  text-decoration: underline;
 }
