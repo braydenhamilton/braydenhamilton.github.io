@@ -1,34 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <h1>Brayden Hamilton</h1>
+        <nav>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="[CV_LINK]" target="_blank" rel="noopener noreferrer">CV</a>
+          <a href="https://github.com/braydenhamilton" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="[LINKEDIN_LINK]" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="projects">
+          <h2>Projects</h2>
+          <div className="project-list">
+            {/* Add your projects here */}
+            <div className="project-item">
+              <h3>Project 1</h3>
+              <p>Description of project 1.</p>
+            </div>
+            <div className="project-item">
+              <h3>Project 2</h3>
+              <p>Description of project 2.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <div className="experience-list">
+            {/* Add your experience here */}
+            <div className="experience-item">
+              <h3>Company 1 - Position</h3>
+              <p>Description of your role and accomplishments.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="App-footer">
+        <p>&copy; 2024 Brayden Hamilton</p>
+      </footer>
+    </div>
   )
 }
 
