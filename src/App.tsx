@@ -5,7 +5,7 @@ const App = () => {
     <div className="container">
       <header className="header">
         <h1 className="title">Brayden Hamilton</h1>
-        <p className="subtitle">Software Developer</p>
+        <p className="subtitle">Software Engineer</p>
       </header>
 
       <main className="main-content">
