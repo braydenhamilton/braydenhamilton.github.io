@@ -161,7 +161,7 @@ const App = () => {
               </div>
             </a>
           </div>
-          <a href="./cv.html" className="cv-link neon-button">
+          <a href="./cv.html" target="_blank" rel="noopener noreferrer" className="cv-link neon-button">
             <span>View My CV</span>
             <div className="neon-glow"></div>
           </a>
